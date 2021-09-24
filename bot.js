@@ -58,7 +58,7 @@
         while (s4d.client && s4d.client.token) {
             await delay(50);
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status) == 'offline') {
-                s4d.client.channels.cache.get('889600319129010186').send({
+                s4d.client.channels.cache.get('846431850783440916').send({
                     embeds: [{
                         title: 'Report',
                         color: (colourRgb(50, 50, 50)),
@@ -76,7 +76,7 @@
                 });
             }
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status) == 'online') {
-                s4d.client.channels.cache.get('889600319129010186').send({
+                s4d.client.channels.cache.get('846431850783440916').send({
                     embeds: [{
                         title: 'Report',
                         color: (colourRgb(50, 50, 50)),
