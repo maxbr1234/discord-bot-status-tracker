@@ -55,7 +55,7 @@
                         image: {
                             url: null
                         },
-                        description: 'Status of Tesla Model Finder terminated by Discord Bot Status Tracker: Offline / Down',
+                        description: 'Status of Tesla Model Finder terminated by Discord Bot Tracker: Offline / Down',
                         footer: {
                             text: null
                         },
@@ -75,7 +75,7 @@
                         image: {
                             url: null
                         },
-                        description: 'Status of Tesla Model Finder terminated by Discord Bot Status Tracker: Online / Up',
+                        description: 'Status of Tesla Model Finder terminated by Discord Bot Tracker: Online / Up',
                         footer: {
                             text: null
                         },
