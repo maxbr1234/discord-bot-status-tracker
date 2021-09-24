@@ -37,17 +37,6 @@
         QueueRepeatMode
     } = require("discord-player")
     s4d.player = new Player(s4d.client)
-
-    function colourRgb(r, g, b) {
-        r = Math.max(Math.min(Number(r), 100), 0) * 2.55;
-        g = Math.max(Math.min(Number(g), 100), 0) * 2.55;
-        b = Math.max(Math.min(Number(b), 100), 0) * 2.55;
-        r = ('0' + (Math.round(r) || 0).toString(16)).slice(-2);
-        g = ('0' + (Math.round(g) || 0).toString(16)).slice(-2);
-        b = ('0' + (Math.round(b) || 0).toString(16)).slice(-2);
-        return '#' + r + g + b;
-    }
-
     await s4d.client.login(process.env.TOKEN).catch((e) => {
         s4d.tokenInvalid = true;
         s4d.tokenError = e;
@@ -58,40 +47,44 @@
         while (s4d.client && s4d.client.token) {
             await delay(50);
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status) == 'offline') {
+                await delay(Number(90) * 1000);
                 s4d.client.channels.cache.get('846431850783440916').send({
                     embeds: [{
-                        title: 'Report',
-                        color: (colourRgb(50, 50, 50)),
+                        title: null,
+                        color: null,
                         image: {
                             url: null
                         },
-                        description: 'Status of the Discord Bot Tesla Model Finder: Offline / Down',
+                        description: 'Status of Tesla Model Finder terminated by Discord Bot Status Tracker: Offline / Down',
                         footer: {
-                            text: 'Powered by Googl Bot Series (Normal and Beta)'
+                            text: null
                         },
                         thumbnail: {
                             url: 'https://cdn.discordapp.com/attachments/848483779865739344/889841898582310912/icons_offline.png'
                         }
                     }],
                 });
+                await delay(Number(90) * 1000);
             }
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status) == 'online') {
+                await delay(Number(90) * 1000);
                 s4d.client.channels.cache.get('846431850783440916').send({
                     embeds: [{
-                        title: 'Report',
-                        color: (colourRgb(50, 50, 50)),
+                        title: null,
+                        color: null,
                         image: {
                             url: null
                         },
-                        description: 'Status of the Discord Bot Tesla Model Finder: Online / Up',
+                        description: 'Status of Tesla Model Finder terminated by Discord Bot Status Tracker: Online / Up',
                         footer: {
-                            text: 'Powered by Googl Bot Series (Normal and Beta)'
+                            text: null
                         },
                         thumbnail: {
                             url: 'https://cdn.discordapp.com/attachments/848483779865739344/889841898305495120/icons_online.png'
                         }
                     }],
                 });
+                await delay(Number(90) * 1000);
             }
 
             
