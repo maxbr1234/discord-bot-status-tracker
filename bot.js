@@ -1,6 +1,8 @@
 (async () => {
     const Discord = require("discord.js");
     const Database = require("easy-json-database");
+    const os = require("os");
+    const process = require("process");
     const devMode = typeof __E_IS_DEV !== "undefined" && __E_IS_DEV;
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
     const s4d = {
@@ -31,7 +33,7 @@
             await delay(50);
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence ? (((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status : 'offline') == 'offline' && (typeof(s4d.client.guilds.cache.find((g) => g.roles.cache.get('891297294815752214') !== undefined).roles.cache.get('891297294815752214')) !== undefined)) {
                 await delay(Number(90) * 1000);
-                s4d.client.channels.cache.get('846431850783440916').send({
+                s4d.client.channels.cache.get('896089956764766318').send({
                     embeds: [{
                         title: null,
                         color: null,
@@ -52,7 +54,7 @@
             }
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence ? (((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status : 'offline') == 'online' && (typeof(s4d.client.guilds.cache.find((g) => g.roles.cache.get('891297294815752214') !== undefined).roles.cache.get('891297294815752214')) !== undefined)) {
                 await delay(Number(90) * 1000);
-                s4d.client.channels.cache.get('846431850783440916').send({
+                s4d.client.channels.cache.get('896089956764766318').send({
                     embeds: [{
                         title: null,
                         color: null,
@@ -73,7 +75,7 @@
             }
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence ? (((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status : 'offline') == 'idle' && (typeof(s4d.client.guilds.cache.find((g) => g.roles.cache.get('891297294815752214') !== undefined).roles.cache.get('891297294815752214')) !== undefined)) {
                 await delay(Number(90) * 1000);
-                s4d.client.channels.cache.get('846431850783440916').send({
+                s4d.client.channels.cache.get('896089956764766318').send({
                     embeds: [{
                         title: null,
                         color: null,
@@ -94,7 +96,7 @@
             }
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence ? (((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.status : 'offline') == 'dnd' && (typeof(s4d.client.guilds.cache.find((g) => g.roles.cache.get('891297294815752214') !== undefined).roles.cache.get('891297294815752214')) !== undefined)) {
                 await delay(Number(90) * 1000);
-                s4d.client.channels.cache.get('846431850783440916').send({
+                s4d.client.channels.cache.get('896089956764766318').send({
                     embeds: [{
                         title: null,
                         color: null,
@@ -115,7 +117,7 @@
             }
             if (((((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence ? (((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.activities[0] ? (((s4d.client.guilds.cache.get('839219672301436990')).members.cache.get('877977398262513726') || await (s4d.client.guilds.cache.get('839219672301436990')).members.fetch('877977398262513726'))).presence.activities[0].type === "STREAMING" : false : false) && (typeof(s4d.client.guilds.cache.find((g) => g.roles.cache.get('891297294815752214') !== undefined).roles.cache.get('891297294815752214')) !== undefined)) {
                 await delay(Number(90) * 1000);
-                s4d.client.channels.cache.get('846431850783440916').send({
+                s4d.client.channels.cache.get('896089956764766318').send({
                     embeds: [{
                         title: null,
                         color: null,
